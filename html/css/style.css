@@ -1,0 +1,75 @@
+html {
+    overflow: scroll;
+}
+ 
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+body {
+    background: transparent !important;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.progress-container {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 5;
+    color: #fff;
+    font-family: sans-serif;
+    width: 20%;
+    position: fixed;
+    bottom: 15.2%;
+    left: 40%;
+}
+
+.progress-labels {
+    width: 110%;
+    top: 12px;
+    height: 25px;
+    text-align: center;
+    position: absolute;
+    display: inline-block;
+    white-space: nowrap
+}
+
+.progress-labels div {
+    font-size: 70%;
+    font-weight:0;
+    position: relative;
+    color: #ffffff;
+    z-index: 10;
+    font-weight:0;
+    letter-spacing:0.1em;
+    font-family: sans-serif;
+}
+
+.progress-bar-container {
+    width: 90%;
+    height: 40px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(22,22,22,0.5);
+    text-align: left;
+    overflow: hidden;
+    margin-left: 10%;
+    position: absolute;
+}
+
+.progress-bar {
+    width: 0%;
+    background: rgb(80, 135, 177);
+    background-size: 30px 30px;
+    height: 100%;
+    transition: width 0.3s;
+    transition-timing-function: ease-out;
+}
+
+@keyframes animate-stripes {
+    0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+}
